@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="truecatspr is your partner for authentic music promotion. We help artists spread their music and reach their target audience.">
+    <meta name="keywords" content="Music promotion, artist promotion, music marketing, social media, Spotify, YouTube, Instagram, TikTok, music PR">
+    <meta name="author" content="truecatspr">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="truecatspr - Music Promotion for Artists">
+    <meta property="og:description" content="Your partner for music promotion and social media marketing. We help artists spread their music and reach their target audience.">
+    <meta property="og:image" content="banner2.jpeg">
+    <meta property="og:url" content="https://www.truecatspr.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="truecatspr - Music Promotion for Artists">
+    <meta name="twitter:description" content="Help your music get heard. truecatspr offers customized promotion for artists.">
+    <meta name="twitter:image" content="banner2.jpeg">
+    <title>truecatspr - Music Promotion</title>
+    <link rel="icon" type="image/x-icon" href="catfavicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "truecatspr",
+            "url": "https://www.truecatspr.com",
+            "logo": "https://www.truecatspr.com/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/truecatspr",
+                "https://www.instagram.com/truecatspr/",
+                "https://bsky.app/profile/truecatspr.bsky.social",
+                "https://www.youtube.com/@truecatspr",
+                "https://www.tiktok.com/@truecatspr",
+                "https://open.spotify.com/user/317fjhiyokxw232jy7get6x3wyxy"
+            ]
+        }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <img src="assets/img/banner2.jpeg" alt="truecatspr Banner for Music Promotion">
+        <!-- Language Switch Buttons -->
+        <div class="language-buttons">
+            <a href="de/index_de.html" class="language-btn">DE</a>
+            <a href="en/index_en.html" class="language-btn selected">EN</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="desktop-menu">
+                <a href="en/index_en.html" class="active">Home</a>
+                <a href="en/about_en.html">About Us</a>
+                <a href="en/services_en.html">Services</a>
+                <a href="en/blog_en.html">Blog</a>
+                <a href="en/contact_en.html">Contact</a>
+            </div>
+
+            <button class="hamburger">&#x2630;</button>
+            <div class="mobile-menu">
+                <a href="en/index_en.html" class="active">Home</a>
+                <a href="en/about_en.html">About Us</a>
+                <a href="en/services_en.html">Services</a>
+                <a href="en/blog_en.html">Blog</a>
+                <a href="en/contact_en.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="section">
+            <h1>Welcome to truecatspr</h1>
+            <p>Your partner for authentic music promotion.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a href="impressum_en.html" class="impressum-link">Imprint</a>
+                    <a href="newsletter.html" class="newsletter-link">Newsletter</a>
+                </div>
+                <p class="copyright">&copy; 2025 truecatspr. All rights reserved.</p>
+            </div>
+            <div class="social-bar">
+                <a href="https://facebook.com/truecatspr" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/truecatspr/" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://bsky.app/profile/truecatspr.bsky.social" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fas fa-cloud"></i>
+                </a>
+                <a href="https://www.youtube.com/@truecatspr" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@truecatspr" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://open.spotify.com/user/317fjhiyokxw232jy7get6x3wyxy" class="social-btn" target="_blank" rel="noopener">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Functionality
+        const hamburgerButton = document.querySelector('.hamburger');
+        hamburgerButton.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
+            hamburgerButton.setAttribute('aria-expanded', menu.classList.contains('active'));
+        });
+
+        // Close the menu when clicking outside
+        document.addEventListener('click', function (e) {
+            const menu = document.querySelector('.mobile-menu');
+            if (!menu.contains(e.target) && !hamburgerButton.contains(e.target)) {
+                menu.classList.remove('active');
+                hamburgerButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
