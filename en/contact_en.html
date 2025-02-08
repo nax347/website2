@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>truecatspr - Music Promotion</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/catfavicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="../assets/img/banner2.jpeg" alt="truecatspr Banner for Music Promotion">
+        <!-- Language Switcher Buttons -->
+        <div class="language-buttons">
+            <a href="../de/contact_de.html" class="language-btn">DE</a>
+            <a href="../en/contact_en.html" class="language-btn selected">EN</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="desktop-menu">
+                <a href="index_en.html">Home</a>
+                <a href="about_en.html">About Us</a>
+                <a href="services_en.html">Services</a>
+                <a href="blog_en.html">Blog</a>
+                <a href="contact_en.html" class="active">Contact</a>
+            </div>
+
+            <button class="hamburger">&#x2630;</button>
+            <div class="mobile-menu">
+                <a href="index_en.html">Home</a>
+                <a href="about_en.html">About Us</a>
+                <a href="services_en.html">Services</a>
+                <a href="blog_en.html">Blog</a>
+                <a href="contact_en.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="section">
+            <h1>Contact</h1>
+            <p>Do you have any questions or would you like to learn more? We look forward to your message!</p>
+        </div>
+
+        <div class="section">
+            <form class="contact-form" action="https://formspree.io/f/mrbekwna" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="section contact-info">
+            <p>Or contact us directly</p>
+            <h3><a href="mailto:truecats@gmail.com">truecats@gmail.com</a></h3>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a href="imprint_en.html" class="impressum-link">Imprint</a>
+                    <a href="newsletter.html" class="newsletter-link">Newsletter</a>
+                </div>
+                <p class="copyright">&copy; 2025 truecatspr. All rights reserved.</p>
+            </div>
+            <div class="social-bar">
+                <a href="https://facebook.com/truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/truecatspr/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://bsky.app/profile/truecatspr.bsky.social" class="social-btn" target="_blank" rel="noopener" aria-label="Bluesky">
+                    <i class="fas fa-cloud"></i>
+                </a>
+                <a href="https://www.youtube.com/@truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://open.spotify.com/user/317fjhiyokxw232jy7get6x3wyxy" class="social-btn" target="_blank" rel="noopener" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu functionality with Toggle and Animation
+        document.querySelector('.hamburger').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
+            this.classList.toggle('is-active'); // Visual change of the button
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('is-active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>truecatspr - Music Promotion</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/catfavicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="../assets/img/banner2.jpeg" alt="truecatspr Banner for Music Promotion">
+        <!-- Language toggle buttons -->
+        <div class="language-buttons">
+            <a href="../de/impressum_de.html" class="language-btn">DE</a>
+            <a href="../en/impressum_en.html" class="language-btn selected">EN</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="desktop-menu">
+                <a href="index_en.html">Home</a>
+                <a href="about_en.html">About Us</a>
+                <a href="services_en.html">Services</a>
+                <a href="blog_en.html">Blog</a>
+                <a href="contact_en.html">Contact</a>
+            </div>
+
+            <button class="hamburger">&#x2630;</button>
+            <div class="mobile-menu">
+                <a href="index_en.html">Home</a>
+                <a href="about_en.html">About Us</a>
+                <a href="services_en.html">Services</a>
+                <a href="blog_en.html">Blog</a>
+                <a href="contact_en.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="section">
+            <h1>Imprint</h1>
+            
+            <h2>Information according to § 5 TMG</h2>
+            <p>
+                Tobias Buchwalder<br>
+                Osningstraße 2<br>
+                49082 Osnabrück<br>
+                Germany
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Phone: 0159 06170822<br>
+                E-Mail: truecats@gmail.com
+            </p>
+
+            <h2>EU Dispute Resolution</h2>
+            <p>
+                The European Commission provides an online platform for resolving disputes (ODR):<br>
+                <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a><br>
+                Not obligated to participate in dispute resolution proceedings before a consumer arbitration board.
+            </p>
+
+            <h2>Liability for Content</h2>
+            <p>
+                Responsible for own content according to § 7 para. 1 TMG.<br>
+                No liability for content on external websites linked from here.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a href="impressum_de.html" class="impressum-link">Impressum</a>
+                    <a href="newsletter.html" class="newsletter-link">Newsletter</a>
+                </div>
+                <p class="copyright">&copy; 2025 truecatspr. Alle Rechte vorbehalten.</p>
+            </div>
+            <div class="social-bar">
+                <a href="https://facebook.com/truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/truecatspr/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://bsky.app/profile/truecatspr.bsky.social" class="social-btn" target="_blank" rel="noopener" aria-label="Bluesky">
+                    <i class="fas fa-cloud"></i>
+                </a>
+                <a href="https://www.youtube.com/@truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@truecatspr" class="social-btn" target="_blank" rel="noopener" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://open.spotify.com/user/317fjhiyokxw232jy7get6x3wyxy" class="social-btn" target="_blank" rel="noopener" aria-label="Spotify">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu functionality
+        document.querySelector('.hamburger').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
